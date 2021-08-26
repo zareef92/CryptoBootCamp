@@ -8,10 +8,11 @@ contract BenchmarkCreator {
     struct Benchmark {
         string name;
         uint benchmarkID;
-        string tokenType;
+        string tokenType; //Types are variables with specific values that need to be defined by CYBOR contract
         string tokenScope;
-        string marketType;
+        string marketType; //Types are variables with specific values that need to be defined by CYBOR contract
         string marketScope;
+        string calculationInputs;
         string calculationMethodology;
     }
 
