@@ -1,4 +1,4 @@
-pragma solidity >=0.5.0 <0.6.0;
+pragma solidity >=0.5.0;
 
 contract BenchmarkCreator {
 
@@ -17,8 +17,8 @@ contract BenchmarkCreator {
 
     Benchmark[] public benchmark;
 
-    function createBencmark(string memory _name, uint _ID, string _tokenType, string _tokenScope, string _marketType, string_marketScope, string _calcMethodology) private {
-        zombies.push(Zombie(_name, _dna));
+    function _createBencmark(string memory _name, uint _ID, string memory _tokenType, string memory _tokenScope, string memory _marketType, string memory _marketScope, string memory _calcMethodology) private {
+        benchmark.push(Benchmark(_name, _ID, _tokenType, _tokenScope, _marketType, _marketScope, _calcMethodology));
     }
 
 }
